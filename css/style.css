@@ -376,6 +376,11 @@ body {
   background-color: #1596BD;
 }
 
+/* clients section ------------- */
+.clients-section {
+  display: none;
+}
+
 
 
 
@@ -505,9 +510,33 @@ body {
 .portfolio-project {
   position: relative;
   width: 100%;
-  max-width: 320px;
   aspect-ratio: 292 /256;
   overflow: hidden;
+}
+
+/* clients section ------------- */
+.client-list {
+  display: block;
+}
+
+.m-col-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.client {
+  background-color: #F3F3F3;
+  aspect-ratio: 190 / 128;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+}
+
+.clients-section {
+  display: block;
 }
 
 }
@@ -643,10 +672,19 @@ body {
 .portfolio-project {
   position: relative;
   width: 100%;
-  max-width: 320px;
   aspect-ratio: 320 / 256;
   overflow: hidden;
 }
 
+/* clients section ------------- */
+.l-col-5 {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.client img {
+  max-width: 75%;
+  max-height: 75%;
+  object-fit: contain;
+}
 
 }
