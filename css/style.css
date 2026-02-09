@@ -26,6 +26,10 @@ html, body {
   background-color: #ffffff;
 }
 
+p {
+  margin: 0;
+}
+
 
 /*
  * Remove text-shadow in selection highlight:
@@ -177,6 +181,29 @@ body {
 
 .col {
   position: relative;
+}
+
+/* section format and headings -------------*/
+.section-format {
+  margin-bottom: 4rem;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.section-header-title {
+  font-weight: 300;
+  font-size: 2.33rem;
+  margin-bottom: 0.25rem;
+}
+
+.section-subheading {
+  font-weight: 300;
+  font-size: 0.92rem;
+  margin-top: 0;
+  color: #A3A3A3;
 }
 
 /* header -------------*/
@@ -381,7 +408,165 @@ body {
   display: none;
 }
 
+/* footer section ------------- */
+.footer-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 1rem;
+}
 
+.page-footer {
+  background-color: #0E2E4E;
+  color: white;
+}
+
+.footer-about,
+.footer-instagram {
+  display: none;
+}
+
+/* footer section (ceo intro)------------- */
+
+.footer-section-ceo {
+  order: 1;
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.ceo-portrait {
+  width: 96px;
+  height: 96px;
+  object-fit: cover;
+}
+
+.ceo-intro-divider {
+  width: 10rem;
+  height: 0.2rem;
+  background-color: #FFB901;
+  border: none;
+  margin: 1.5rem 0;
+}
+
+/* footer section (track us!)------------- */
+.footer-heading-socials {
+  padding-bottom: 0.8rem;
+  border-bottom: 2px solid #19B2DE;
+  margin-bottom: 1.5rem;
+  margin-top: 0;
+}
+
+.footer-socials {
+  order: 2;
+  margin-left: 8rem;
+}
+
+.socials-links {
+  display: flex;
+  gap: 0.5rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex-wrap: wrap;
+}
+
+.socials-icon {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 0.15rem;
+}
+
+.socials-purple {
+  background-color: #527CC4;
+}
+
+.socials-red {
+  background-color: #E46145;
+}
+
+.socials-blue{
+  background-color: #00B0E2;
+}
+
+.socials-pink {
+  background-color: #F6679C;
+}
+
+.socials-yellow {
+  background-color: #FFB901;
+}
+
+.newsletter-form {
+  display: flex;
+  width: 100%;
+  max-width: 100%;
+  margin-top: 1.5rem;
+}
+
+.email-input {
+  padding: 0.75rem;
+  border: none;
+  background-color: #DE6262;
+  color: white;
+  border-radius: 0.15rem;
+  flex: 1;
+  width: 100%;
+}
+
+.submit-email-button {
+  width: 4.5rem;
+  background-color: #FFB901;
+  border: none;
+  border-radius: 0.15rem;
+}
+
+
+/* footer section (mastodon)------------- */
+.footer-heading-mastodon {
+  color: #19B2DE;
+  padding-bottom: 0.8rem;
+  border-bottom: 2px solid #FFB901;
+  margin-bottom: 1.5rem;
+  width: 19rem;
+}
+
+.footer-mastodon {
+  order: 3;
+}
+
+.mastodon-messages {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.message-post {
+  margin-bottom: 1.2rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 0.75rem;
+  line-height: 1.25rem;
+  text-align: justify;
+}
+
+.blue-username {
+  color: #1BADE6;
+}
+
+
+/* footer section (rainbow svg)------------- */
+.colour-strip {
+  order: 4;
+  margin-top: 1rem;
+}
+
+.colour-strip img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
 
 
 /* Tablet =================================================*/
@@ -539,6 +724,124 @@ body {
   display: block;
 }
 
+/* footer section ------------- */
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: auto auto auto auto;
+  gap: 2rem;
+  margin-right: 2rem;
+  margin-left: 2rem;
+}
+
+.footer-heading-mastodon {
+  margin-top: 0;
+}
+
+/* footer section (ceo intro)------------- */
+.footer-section-ceo {
+  margin: 2.5rem 2rem 0 2rem;
+  grid-column: 1/7;
+  grid-row: 1;
+}
+
+.ceo-portrait {
+  width: 9rem;
+  height: 9rem;
+  object-fit: cover;
+}
+
+.ceo-text {
+  margin: 1rem;
+}
+
+/* footer section (about us)------------- */
+.footer-about {
+  order: 2;
+  display: block;
+  grid-column: 1/4;
+  grid-row: 2;
+}
+
+.footer-heading-about {
+  color: #FFB901;
+  padding-bottom: 0.8rem;
+  border-bottom: 2px solid #21C183;
+  margin-bottom: 1.5rem;
+  margin-top: 0;
+}
+
+.footer-about-content {
+  margin-bottom: 1.2rem;
+}
+
+/* footer section (instagram)------------- */
+.footer-instagram {
+  order: 3;
+  display: block;
+  grid-column: 4/7;
+  grid-row: 2;
+}
+
+.footer-heading-insta {
+  color: #DE6262;
+  padding-bottom: 0.8rem;
+  border-bottom: 2px solid #19B2DE;
+  margin-bottom: 1.5rem;
+  margin-top: 0;
+}
+
+.instagram-posts {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.instagram-image {
+  width: 100%;
+  aspect-ratio: 61 / 64;
+  object-fit: cover
+}
+
+/* footer section (mastodon)------------- */
+.footer-mastodon {
+  order: 4;
+  grid-column: 1/5;
+  grid-row: 3;
+}
+
+/* footer section (track us)------------- */
+.footer-socials {
+  order: 5;
+  margin-left: 0;
+  grid-column: 5/7;
+  grid-row: 3;
+  overflow: hidden;
+}
+
+.newsletter-form {
+  width: 100%;
+  display: flex;
+}
+
+
+/* footer section (rainbow svg)------------- */
+.colour-strip {
+  order: 6;
+  margin-top: 1rem;
+  grid-column: 1/7;
+  grid-row: 4;
+}
+
+.colour-strip img{
+  display: block;
+  width: 65%;
+  height: auto;
+}
+
 }
 
 
@@ -685,6 +988,81 @@ body {
   max-width: 75%;
   max-height: 75%;
   object-fit: contain;
+}
+
+/* footer section ------------- */
+.page-footer {
+  margin-left: -12rem;
+  margin-right: -12rem;
+  
+}
+
+.footer-grid {
+  margin-left: 12rem;
+  margin-right: 12rem;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto auto auto;
+}
+
+/* footer section (ceo intro)------------- */
+.footer-section-ceo {
+  grid-column: 1/10;
+  grid-row: 1;
+}
+
+/* footer section (about us)------------- */
+.footer-about {
+  grid-column: 1/4;
+  grid-row: 2;
+}
+
+/* footer section (instagram)------------- */
+.footer-instagram {
+  order: 3;
+  grid-column: 4/7;
+  grid-row: 2;
+}
+
+.instagram-posts {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+/* footer section (mastodon)------------- */
+.footer-mastodon {
+  order: 4;
+  grid-column: 7/11;
+  grid-row: 2;
+}
+
+.footer-heading-mastodon {
+  width: 75%;
+}
+
+/* footer section (track us)------------- */
+.footer-socials {
+  order: 5;
+  grid-column: 11/13;
+  grid-row: 2;
+}
+
+.submit-email-button {
+  flex-shrink: 0;
+  width:30%;
+}
+
+/* footer section (rainbow svg)------------- */
+.colour-strip {
+  order: 6;
+  margin-top: 0;
+  grid-column: 1/4;
+  grid-row: 3;
+}
+
+.colour-strip img{
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 }
