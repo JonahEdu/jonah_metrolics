@@ -376,5 +376,41 @@ h3 {
 .mid-banner-flag::before { background-color: #DE6262; }
 .base-banner-flag::before { background-color: #FFB901; }
 
+/* service----------------- */
 
-}
+ .services-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+ }                            
+  [class*="-service"] {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;    
+    gap: 0.5rem;            
+    padding: 1rem 0;
+  }
+  .service-image {
+    order: 1; 
+    margin: 0 auto;
+  }
+  .service-title {
+    order: 2;  
+    text-align: center;
+    margin: 0.5rem 0;
+  }
+  .service-description {
+    order: 3; 
+    text-align: left;
+    color: #939393;
+    font-size: 0.9rem;
+    width: 100%; 
+    margin: 0;
+  }
+  .service-image img {
+    width: 6em; 
+    height: auto;
+  }
+
+
+ }
