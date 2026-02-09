@@ -413,12 +413,15 @@ body {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  margin-top: 1rem;
+  margin: 1rem 1rem 0 1rem;
 }
 
 .page-footer {
   background-color: #0E2E4E;
   color: white;
+
+  margin-left: -1rem;
+  margin-right: -1rem;
 }
 
 .footer-about,
@@ -456,6 +459,21 @@ body {
   border-bottom: 2px solid #19B2DE;
   margin-bottom: 1.5rem;
   margin-top: 0;
+  position: relative;
+}
+
+.footer-heading-socials::after {
+  content: "";
+  position: absolute;
+  left: 2rem;
+  bottom: -0.6rem;
+
+  width: 0;
+  height: 0;
+
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 8px solid #19B2DE;
 }
 
 .footer-socials {
@@ -530,6 +548,21 @@ body {
   border-bottom: 2px solid #FFB901;
   margin-bottom: 1.5rem;
   width: 19rem;
+  position: relative;
+}
+
+.footer-heading-mastodon::after {
+  content: "";
+  position: absolute;
+  left: 1.5rem;
+  bottom: -0.6rem;
+
+  width: 0;
+  height: 0;
+
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 8px solid #FFB901;
 }
 
 .footer-mastodon {
@@ -769,6 +802,21 @@ body {
   border-bottom: 2px solid #21C183;
   margin-bottom: 1.5rem;
   margin-top: 0;
+  position: relative;
+}
+
+.footer-heading-about::after {
+  content: "";
+  position: absolute;
+  left: 1.5rem;
+  bottom: -0.6rem;
+
+  width: 0;
+  height: 0;
+
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 8px solid #21C183;
 }
 
 .footer-about-content {
@@ -789,6 +837,21 @@ body {
   border-bottom: 2px solid #19B2DE;
   margin-bottom: 1.5rem;
   margin-top: 0;
+  position: relative
+}
+
+.footer-heading-insta::after {
+  content: "";
+  position: absolute;
+  left: 1.5rem;
+  bottom: -0.6rem;
+
+  width: 0;
+  height: 0;
+
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 8px solid #19B2DE;
 }
 
 .instagram-posts {
