@@ -1072,7 +1072,7 @@ h3 {
 /* service---------------------- */
  .services-section {
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    margin: 0 0.2vh;
+    margin: 0 20vh;
  }
  .service-description {
     text-align: justify;
