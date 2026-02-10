@@ -269,7 +269,7 @@ h3 {
 }
 
 /* Tablet =================================================*/
-@media (min-width: 48rem) {
+@media (min-width: 40rem) {
 
 /* header -------------*/
 .page-header {
@@ -360,7 +360,10 @@ h3 {
     bottom: 0;
     width: 0.5rem;
 }
-
+.gray_background1,
+.gray_background2 {
+  display: none;
+}
 
 .top-banner-flag::before { background-color: #186AA2; }
 .mid-banner-flag::before { background-color: #DE6262; }
@@ -407,7 +410,7 @@ h3 {
  }
 
 /* desktop =================================================*/
- @media (min-width: 75rem) {
+ @media (min-width: 64rem) {
 
 /* header---------- */
 .page-header {
